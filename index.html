@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="assets/favicon.ico" rel="icon" type="image/x-icon">
+    </head>
+    <body>
+        <section class="top-section">
+        <div class="lights">
+            <div class="blue">
+                <div class="blue-shine"></div>
+            </div>
+            <div class="small-circles">
+                <div class="red">
+                    <div class="red-shine"></div>
+                </div>
+                <div class="yellow">
+                    <div class="yellow-shine"></div>
+                </div>
+                <div class="green">
+                    <div class="green-shine"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form action="">
+                <input class="search" type="text" name="search" placeholder="Search...">
+            </form>
+        </div>
+        <img class="pokelogo" src="assets/pokemon.png" alt="pokelogo">
+    </section>
+    <section class="mid-section">
+        <div class="outer">
+            <div class="main-screen">
+                <ul class="pokemon-list" onclick="audio.play();">
+                    <script type="text/javascript">
+                        const audio = new Audio()
+                        audio.volume = 0.5
+                        audio.src = "assets/selectsound.mp3";
+                    </script>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="info-screen">
+            <div class="button-img-div">
+                <div class="toggle-button" onclick="audioShiny.play();">
+                    <script type="text/javascript">
+                        const audioShiny = new Audio()
+                        audioShiny.volume = 0.2
+                        audioShiny.src = "assets/shinyaudio.mp3";
+                    </script>
+                </div>
+                <div class="img-div"></div>
+            </div>
+            <div class="info-div"></div>
+        </div>
+    </section>
+    <section class="bottom-section">
+        <ul class="team-list">
+            <li class="pokemon-team" id="empty"></li> 
+            <li class="pokemon-team" id="empty"></li>
+            <li class="pokemon-team" id="empty"></li>
+            <li class="pokemon-team" id="empty"></li>
+            <li class="pokemon-team" id="empty"></li>
+            <li class="pokemon-team" id="empty"></li> 
+        </ul>
+        <div class="team-buttons">
+            <button class="team-add" onclick="audio2.play();">
+                <script type="text/javascript">
+                    const audio2 = new Audio()
+                    audio2.volume = 0.5
+                    audio2.src = "assets/addsound.mp3";
+                </script>
+                Add To Team</button>
+            <button class="team-remove" onclick="audio3.play();">
+                <script type="text/javascript">
+                    const audio3 = new Audio()
+                    audio3.volume = 0.5
+                    audio3.src = "assets/deletesound.mp3";
+                </script>
+                Remove From Team</button>
+        </div>
+    </section>
+        <script src="index.js" defer></script>
+    </body>
+</html>
