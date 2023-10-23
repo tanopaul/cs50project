@@ -1,10 +1,8 @@
 # Pokedex!
 
-## Video Demo
+#### Video Demo: https://youtu.be/ginEpWqBJsQ
 
-https://youtu.be/ginEpWqBJsQ
-
-## Description
+#### Description
 
 Explore the Pokemon directory, peruse each Pokemon's description, and assemble your dream team. This project was crafted by extracting data from the Pokemon API. Users can easily navigate a comprehensive list of Pokemon. When a specific card is clicked, the Pokemon's image and details will be showcased.
 
