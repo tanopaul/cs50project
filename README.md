@@ -4,9 +4,16 @@
 
 ## Description
 
-Scroll through the Pokemon directory, view each Pokemon description, and build your team. This project was made by fetching data from the Pokemon API. Users have the ability to scroll through a list of Pokemon. Once the user clicks on a specific card, the Pokemon's image and their information will be displayed.
-Users can build their personal Pokemon deck team by adding the Pokemon to their team inventory(team limit is set to 6).Users can delete a Pokemon from their team as well as search for specific Pokemon.
-The index.js file is where the functionality of the app comes into play. A fetch statement that calls the PokeAPI url returns a response that is to be translated into JSON format, stored in a variable as an array of objects, and then sent through to the renderPokedex function.
-The renderPokedex function receives each pokemon and creates new elements within the DOM. Event listeners are also dynamically created and assigned to every pokemon that is rendered in the pokedex list.
-The "click" event listener sends a fetch request to the pokeAPI for the specific character that was clicked and returns all of the information about that pokemon to be displayed in the two boxes on the right. Getting the correct weight and height of each pokemon was a challenge because the data that the API was sending back was in decimeters and hectograms, so I needed to convert the weight into inches and pounds.
-Lastly, once a pokemon that is selected is added to your team with the "add to team" button, it will be displayed in one of the boxes below. There is an event listener to add pokemon to your team and a listener to delete pokemon from your team while shifting all pokemon to left so that no empty spaces occur in the center.
+Explore the Pokemon directory, peruse each Pokemon's description, and assemble your dream team. This project was crafted by extracting data from the Pokemon API. Users can easily navigate a comprehensive list of Pokemon. When a specific card is clicked, the Pokemon's image and details will be showcased.
+
+Users can curate their own personalized Pokemon squad by adding them to their team inventory (with a maximum limit of 6). They also have the option to remove a Pokemon from their team and search for specific Pokemon.
+
+The index.js file houses the core functionality of the app. A fetch statement is employed to call the PokeAPI URL, which yields a response to be converted into JSON format. This data is then stored as an array of objects, subsequently passed to the renderPokedex function.
+
+The renderPokedex function handles the creation of new DOM elements for each Pokemon. Event listeners are dynamically generated and linked to every Pokemon featured in the Pokedex list.
+
+Upon a "click" event, a fetch request is dispatched to the PokeAPI for the specific character that was selected. This request retrieves all pertinent information about the chosen Pokemon, which is then displayed in the two boxes on the right-hand side.
+
+Accurately determining the weight and height of each Pokemon presented a challenge, as the API's data was provided in decimeters and hectograms. Consequently, a conversion was necessary to express the weight in inches and pounds.
+
+Lastly, when a selected Pokemon is added to the team using the "add to team" button, it will be visibly displayed in one of the boxes below. There are event listeners in place for both adding and removing Pokemon from the team. These listeners ensure a seamless transition, shifting all Pokemon to the left to prevent any empty spaces in the center.
